@@ -1,0 +1,33 @@
+<head>
+    <link href="/css/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-slate-100">
+    <div class="flex bg-blue-500 text-white place-items-center rounded p-4 font-mono" style="height: 10%;">
+        <h2 class="text-4xl">Bookify</h2>
+        <img src="/static/book.png" style="width: 40px;" class="ml-2">
+        <ul class="flex">
+          <li class="mr-4 ml-8">
+            <a class="inline-block rounded text-white py-1 px-3 hover:bg-white hover:text-blue-700 " href="/">Library</a>
+          </li>
+          <li class="mr-6">
+            <a class="inline-block rounded text-white py-1 px-3 hover:bg-white hover:text-blue-700 " href="/docs">FastApi</a>
+          </li>
+          <li class="mr-4">
+            <a class="inline-block border border-blue-500 rounded py-1 px-3 text-blue-700 bg-white" href="/sign_in">Sign in</a>
+          </li>
+        </ul>
+    </div>
+
+    <br>
+    <div class="p-3 font-mono text-2xl">Book info</div>
+    <ul class="p-3 ">
+        <li>ID: {{book.id}}</li>
+        <li>Name: {{book.name}}</li>
+        <li>Pages: {{book.pages}}</li>
+        <li>Cover type: {{book.cover_type}}</li>
+        <li>Author: {{author.name}} <img src='/{{author.img_path}}'></li>
+        <li>Image cover:</li>
+        <img src='/{{book.img_path}}'>
+    </ul>
+</body> 
